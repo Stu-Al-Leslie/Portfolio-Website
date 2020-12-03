@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans&family=Roboto&family=Roboto+Mono&family=Roboto+Slab&display=swap');
+
+html, body {
+    background-image: linear-gradient(rgb(195, 209, 255), rgb(207, 218, 255), rgb(227, 233, 255), rgb(255, 243, 239), rgb(255, 209, 163), rgb(255, 138, 18));/* rgb(75, 75, 200);*/
+    width  : 100%;
+}
+
+h1,h2,h3{
+    font-family: "Noto Sans", "Open Sans", "Roboto", sans-serif;
+}
+
+p, li, a {
+    font-family: 'Roboto mono', sans-serif;
+    text-decoration: none;
+}
+
+a:hover{
+   text-decoration: none;
+}
+
+.middle {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+} 
+
+.nav{
+   background-color: blueviolet; 
+   border-radius: 25px;     
+   bottom: 5%; 
+   padding: 5px 5px; 
+   position: fixed;   
+   display: flex; 
+   justify-content: center; 
+   right: 10%; 
+   left: 10%; 
+}
+
+.nav-con{
+   margin: 0 auto; 
+}
+
+.page{
+   height: 1000px; 
+   padding-top: 0; 
+}
+
+#personal{
+   padding-top: 5%;
+}
+
+.planet {
+   position: relative; 
+   width: 10px; 
+   height: 10px; 
+   content: ""; 
+   left: 0px; 
+   top: 0px; 
+   background-color: slategray; 
+   border-radius: 50%; 
+   margin: 5px 100px; 
+}    
+
+.planet>span{
+   visibility: hidden;
+   color: black;   
+   border-color: whitesmoke;
+   border-width: 1px;
+   text-decoration: none;
+   text-shadow: 10px;
+}
+.planet:hover{
+   transform: scale(2); 
+   transition-duration: 0.5s;  
+}
+
+.planet:hover>span{
+   visibility: visible;   
+   text-decoration: none;
+   margin: 0px 0px 10px 10px;
+}  
+
+.solarContainer{
+   width: 100%;
+   height: 60%;
+   vertical-align: middle;
+}
+
+/*Landing graphic animation rules*/
+#mercuryGroup{
+   z-index: 0;      
+   position: absolute;
+   margin: 0 auto;
+   vertical-align: middle;   
+}
+
+#mercury{
+   background-color: rgb(195, 209, 255); 
+}  
+
+#mercuryOrbit {
+   animation: spin 10s infinite linear;  
+}
+ 
+#venusGroup{
+   z-index: 1;      
+   position: absolute;
+   vertical-align: middle;
+   margin: 0 auto;
+}
+
+#venus{
+   background-color: rgb(207, 218, 255); 
+}  
+
+#venusOrbit{  
+   animation: spin 26s infinite linear;
+}
+
+#earthGroup{
+   z-index: 2;      
+   position: absolute;
+   vertical-align: middle;   
+   margin: 0 auto;
+}
+ 
+#earth{
+   background-color: rgb(227, 233, 255);
+}  
+
+#earthOrbit  {
+   animation: spin 42s infinite linear;
+}
+
+#marsGroup{
+   z-index: 3;      
+   position: absolute;
+   vertical-align: middle;
+   margin: 0 auto;
+}
+
+#mars{
+   background-color: rgb(255, 243, 239); 
+} 
+ 
+#marsOrbit   {
+   animation: spin 78s infinite linear; 
+}
+
+#jupiterGroup{
+   z-index: 4;      
+   position: absolute;
+   vertical-align: middle;
+   margin: 0 auto;
+}
+
+#jupiter{
+   background-color: rgb(255, 209, 163); 
+}  
+ 
+#jupiterOrbit{   
+   animation: spin 492s infinite linear; 
+}   
+
+#saturnGroup{
+   z-index: 5;
+   position: absolute;
+   vertical-align: middle;
+   margin: 0 auto;
+}
+ 
+#saturn{
+   background-color: rgb(255, 138, 18);
+} 
+ 
+#saturnOrbit{    
+   animation: spin 1221s infinite linear; 
+}
+
+
+@keyframes spin{ 
+   0%  {transform: rotate(0deg);}
+   100%{transform: rotate(360deg);}  
+}
+
